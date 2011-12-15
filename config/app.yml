@@ -1,0 +1,33 @@
+all:          
+  ad:
+    options:   # theses options are usefull for the adldap class, the documentation is online
+      account_suffix:            '@testathon.net'
+      #account_suffix:            '@example.com'
+      base_dn:                   'DC=testathon,DC=net'
+      #base_dn:                   'DC=example,DC=com'
+      # LSO : Un contrôleur de domaine (DC) stocke une copie de la base de données de l'annuaire et le processus de réplication est automatique entre les contrôleurs dans le domaine.
+      #domain_controllers:        [ "example.com" ]
+      domain_controllers:        [ "testathon.net" ]
+      ad_username:               'stuart'
+      ad_password:               'stuart'
+      recursive_groups:          false
+    # if ntlm is activated, autologon with the windows username (there are some issues with the NTLM protocol, they are documented farther in this readme)
+    ntlm_active:                 false
+    # if kerberos is activated, autologon with the windows username
+    kerberos_active:             false
+    # the name of the group authorized to acces to application
+    group_authorize:             GROUP
+    # the master OU in your AD where will be create the groups
+    # LSO : OU  = Unité d'organisation pour catégoriser les objets d'un domaine selon un schéma de regroupement administratif logique.
+    #master_ou:                   'OU=ENFANT2,OU=ENFANT1,OU=PARENT'
+    master_ou:                   'OU=users'
+    #master_ou:                   'OU=people'
+    # the value is added after the name of the group
+    # ie : I add the group 'administrator', in AD, the group created will be 'administrator_SECURE_GROUP' but still appear as 'administrator' in your web interface
+    # if useless, set false
+    #secure_group_name:           _SECURE_GROUP
+    secure_group_name:           false
+    # an array of group not allowed to be created
+    # if useless, set false
+    #group_not_allowed:           [ group1, group2 ]
+    group_not_allowed:           false

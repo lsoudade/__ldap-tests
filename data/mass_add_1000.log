@@ -1,0 +1,66 @@
+Connexion au serveur - OK
+
+Paramètrage de la version - OK
+
+Bind - OK
+
+Création d'une entrée CN = Lorraine Soudade
+Executé en 0.040712118148804 secondes
+
+Recherche sur CN = lorraine*
+1 entrée(s) trouvée(s)
+dn = cn=Lorraine Soudade,ou=people,dc=example,dc=com
+cn = Lorraine Soudade
+sn = Soudade
+Executé en 0.00039410591125488 secondes
+
+Modification de l'entrée SN = Soudade => SN = Test
+Executé en 0.0078341960906982 secondes
+
+Recherche sur CN = lorraine*
+1 entrée(s) trouvée(s)
+dn = cn=Lorraine Soudade,ou=people,dc=example,dc=com
+cn = Lorraine Soudade
+sn = Test
+Executé en 0.0003211498260498 secondes
+
+Suppression de lorraine
+Executé en 0.0081770420074463 secondes
+
+Recherche sur CN = lorraine*
+0 entrée(s) trouvée(s)
+Executé en 0.00056314468383789 secondes
+
+Création de 1000 entrées
+Executé en 18.703769922256 secondes
+
+Modification des 1000 entrées
+Executé en 14.947603940964 secondes
+
+Création d'une entrée CN = Lorraine Soudade
+Executé en 0.023775100708008 secondes
+
+Recherche sur CN = lorraine*
+1 entrée(s) trouvée(s)
+dn = cn=Lorraine Soudade,ou=people,dc=example,dc=com
+cn = Lorraine Soudade
+sn = Soudade
+Executé en 0.0023469924926758 secondes
+
+Modification de l'entrée SN = Soudade => SN = Test
+Executé en 0.0069470405578613 secondes
+
+Recherche sur CN = lorraine*
+1 entrée(s) trouvée(s)
+dn = cn=Lorraine Soudade,ou=people,dc=example,dc=com
+cn = Lorraine Soudade
+sn = Test
+Executé en 0.0033750534057617 secondes
+
+Suppression de lorraine
+Executé en 0.0049831867218018 secondes
+
+Suppression des 1000 entrées
+Executé en 19.379875183105 secondes
+
+Fermeture de la connexion - OK
